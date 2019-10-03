@@ -447,3 +447,163 @@ div.featured section .latest .text-img {
     gap: 10px;
   }
 }
+
+.latest-deals {
+  width:90%;
+  margin: 0 auto;
+}
+
+.deals-heading {
+display: flex;
+flex-wrap: wrap;
+border: 1px solid black;
+justify-content: space-between;
+padding: 10px;
+color: #f42;
+font-weight: 600;
+}
+
+.deals-heading h3{
+  font-size: 12px;
+  align-self: center;
+}
+
+.deals-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  justify-content: space-between;
+  grid-gap: 20px 20px; 
+  margin-top: 10px;
+}
+
+.deals-content div .img{
+  height: 50px;
+  width: 100%;
+  background: #f42;
+}
+
+.deals-content p{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.deals-content p a:hover,
+.deals-content p a:active{
+  color: #f42;
+  text-decoration-line: underline;
+}
+
+.deals-content span{
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1023px){
+  .deals-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    justify-content: space-between;
+    grid-gap: 20px 20px; 
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .deals-content{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .deals-content div{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first second second"
+    "first third third";
+    border: 1px solid black;
+    grid-gap: 10px;
+  }
+
+  .deals-content .img{
+    height: 80px;
+    grid-area: first;
+    border: 1px solid #fd3;
+    padding: 4px;
+  }
+  
+  .deals-content p{
+    grid-area: second;
+    border: 1px solid rgb(255, 51, 102);
+    padding: 4px;
+  }
+
+  .deals-content span{
+    grid-area: third;
+    border: 1px solid rgb(255, 21, 129);
+    padding: 4px;
+  }
+}
+
+/* footer */
+
+footer{
+  display: grid;
+  grid-template-rows: 200px 200px;
+}
+.icons{
+  background: #444;
+}
+
+.icons ul{
+  display: flex;
+  justify-content: center;  
+  height: 50%;
+}
+.icons ul li{
+  margin-right: 10px;
+}
+
+.icons ul:first-of-type li{
+  background: #7d7c7c;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+.icons a{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #7d7c7c;
+  display: inherit;
+}
+.icons a:hover,
+.icons a:active{
+  color: #fff;
+}
+
+.icons ul:first-of-type{
+  align-items: flex-end;
+}
+.icons ul:last-of-type{
+  align-items: center;
+}
+.copy{
+  background: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy p {
+  font-size: 14px;
+  color: #7d7c7c;
+}
+
+@media screen and (max-width:767px){
+  .copy p {
+    width: 250px;
+    text-align: center;
+  }
+}
