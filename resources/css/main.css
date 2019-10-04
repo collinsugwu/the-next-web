@@ -48,12 +48,29 @@ header a {
   font-weight: bold;
 }
 
+
+.icons a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #7d7c7c;
+  display: inherit;
+}
+
 .first-nav li a {
   color: #7d7c7c;
   font-size: 12px;
   font-weight: bold;
 }
 
+
+.last-nav ul li {
+  margin-right: 20px;
+}
+
+.icons ul li {
+  margin-right: 10px;
+}
 article.fund h2 a {
   color: #fff;
 }
@@ -68,13 +85,6 @@ article.fund ul li a {
   color: #555;
 }
 
-.icons a {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  color: #7d7c7c;
-  display: inherit;
-}
 
 .icons a:hover,
 .icons a:active {
@@ -86,9 +96,6 @@ article.fund ul li a {
   margin: 0 5px;
 }
 
-.last-nav ul li {
-  margin-right: 20px;
-}
 
 .first-ul li:first-of-type {
   margin-left: 15px;
@@ -98,9 +105,7 @@ article.fund ul li a {
   margin-right: 15px;
 }
 
-.icons ul li {
-  margin-right: 10px;
-}
+
 
 .icons ul:first-of-type li {
   background: #7d7c7c;
@@ -432,11 +437,19 @@ section.latest-news article {
   gap: 5px 10px;
 }
 
+article.fund ul li img {
+  width: 6%;
+}
+
 section.latest-news .l-news-img {
   grid-area: img;
   height: 80px;
   position: relative;
   overflow: hidden;
+}
+
+.copy p img {
+  width: 5%;
 }
 
 section.latest-news .l-news-img img {
@@ -503,6 +516,11 @@ section.latest-news .l-news-content {
 }
 
 /* Funding */
+.deals-content p a:hover,
+.deals-content p a:active {
+  color: #f42;
+  text-decoration-line: underline;
+}
 
 .icons ul:last-of-type li a {
   color: #fff;
@@ -549,11 +567,7 @@ section.funding ul.links li {
   font-weight: bold;
 }
 
-.deals-content p a:hover,
-.deals-content p a:active {
-  color: #f42;
-  text-decoration-line: underline;
-}
+
 
 article.fund div.fund-footer a {
   font-size: 0.6em;
@@ -587,9 +601,7 @@ article.fund .img {
   height: 50px;
 }
 
-article.fund ul li img {
-  width: 6%;
-}
+
 
 article.fund .img img {
   width: 100%;
@@ -864,9 +876,7 @@ footer {
   background: #444;
 }
 
-.copy p img {
-  width: 5%;
-}
+
 
 .icons ul:first-of-type li img {
   height: 30px;
