@@ -31,6 +31,39 @@ a {
   visibility: hidden;
 }
 
+.icons a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #7d7c7c;
+  display: inherit;
+}
+
+.icons a:hover,
+.icons a:active {
+  color: #fff;
+}
+
+.icons ul li {
+  margin-right: 10px;
+}
+
+.icons ul:first-of-type li {
+  background: #7d7c7c;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.icons ul {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
 /* Header */
 header {
   width: 100%;
@@ -81,12 +114,43 @@ li a {
   margin: 0 5px;
 }
 
+.last-nav ul li {
+  margin-right: 20px;
+}
+
+article.fund ul li {
+  padding: 5px 5px;
+}
+
+article.fund ul li a {
+  font-weight: 100;
+  font-size: 0.8em;
+  color: #555;
+}
+
 .first-ul li:first-of-type {
   margin-left: 15px;
 }
 
 .last-ul li:last-of-type {
   margin-right: 15px;
+}
+
+header a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.last-nav a {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+article.fund h2 a {
+  color: #fff;
 }
 
 .first-nav li a {
@@ -122,10 +186,6 @@ li a {
   height: 30px;
 }
 
-.last-nav ul li {
-  margin-right: 20px;
-}
-
 .last-nav ul li:first-child {
   margin-left: 20px;
 }
@@ -134,13 +194,6 @@ input {
   width: 50px;
   height: 40px;
   padding: 5px;
-}
-
-.last-nav a {
-  color: #aaa;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 header .ticket {
@@ -152,12 +205,6 @@ header .ticket {
 
 header a p {
   padding-left: 20px;
-}
-
-header a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
 }
 
 @media screen and (max-width: 1023px) {
@@ -246,6 +293,15 @@ header a {
   font-weight: bolder;
 }
 
+.insight span {
+  font-size: 80%;
+  color: #aaa;
+}
+
+.tech span {
+  font-size: 80%;
+}
+
 .slide1 section span {
   font-size: 12px;
   font-weight: 100;
@@ -260,11 +316,6 @@ header a {
 .insight h2 {
   font-size: 320%;
   font-weight: bolder;
-}
-
-.insight span {
-  font-size: 80%;
-  color: #aaa;
 }
 
 .slide2 {
@@ -295,10 +346,6 @@ header a {
 .tech h2 {
   font-weight: bolder;
   color: #aaa;
-}
-
-.tech span {
-  font-size: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -359,15 +406,15 @@ header a {
 }
 
 /* Latest news */
-section.latest-news h2 {
-  margin-top: 30px;
-  color: #f24120;
-}
-
 .latest-news h2,
 .latest-news-articles {
   width: 98%;
   margin: 0 auto;
+}
+
+section.latest-news h2 {
+  margin-top: 30px;
+  color: #f24120;
 }
 
 section.latest-news article {
@@ -386,6 +433,10 @@ section.latest-news .l-news-img {
   height: 80px;
   position: relative;
   overflow: hidden;
+}
+
+article.fund ul li img {
+  width: 3%;
 }
 
 section.latest-news .l-news-img img {
@@ -470,9 +521,55 @@ section.funding ul.links li {
   font-size: 14px;
 }
 
+.deals-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  justify-content: space-between;
+  grid-gap: 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.deals-content div .img {
+  width: 100%;
+}
+
+.deals-content div .img img {
+  width: 100%;
+}
+
+.deals-content p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.deals-content p a:hover,
+.deals-content p a:active {
+  color: #f42;
+  text-decoration-line: underline;
+}
+
+.deals-content span {
+  font-size: 12px;
+}
+
+article.fund div.fund-footer a {
+  font-size: 0.6em;
+  color: #555;
+}
+
+div.featured section .img a {
+  color: #fff;
+}
+
 section.funding ul.links li a {
   color: #f42;
   font-weight: 400;
+}
+
+.deals-heading h3 {
+  font-size: 12px;
+  align-self: center;
 }
 
 article.fund {
@@ -488,6 +585,10 @@ article.fund .img {
   height: 50px;
 }
 
+article.fund ul li img {
+  width: 6%;
+}
+  
 article.fund .img img {
   width: 100%;
 }
@@ -498,9 +599,6 @@ article.fund h2 {
   font-size: 1.2em;
 }
 
-article.fund h2 a {
-  color: #fff;
-}
 
 article.fund h3 {
   padding: 10px 0 10px 80px;
@@ -518,29 +616,10 @@ article.fund ul {
   background: #fffaf8;
 }
 
-article.fund ul li {
-  padding: 5px 5px;
-}
-
-article.fund ul li a {
-  font-weight: 100;
-  font-size: 0.8em;
-  color: #555;
-}
-
-article.fund ul li img {
-  width: 3%;
-}
-
 article.fund div.fund-footer {
   border-top: 1px solid #ffebe9;
   padding: 10px;
   background: #fffaf8;
-}
-
-article.fund div.fund-footer a {
-  font-size: 0.6em;
-  color: #555;
 }
 
 @media screen and (min-width: 768px) {
@@ -569,9 +648,6 @@ article.fund div.fund-footer a {
     margin: 10px 0;
   }
 
-  article.fund ul li img {
-    width: 6%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -642,10 +718,6 @@ div.featured section .img .content {
   color: #fff;
 }
 
-div.featured section .img a {
-  color: #fff;
-}
-
 div.featured section .img .content .tag {
   text-transform: uppercase;
   font-size: 11px;
@@ -661,6 +733,11 @@ div.featured section .latest {
   display: flex;
   font-size: 12px;
   background: #ffebe9;
+}
+
+div.featured section .latest p a {
+  font-size: 15px;
+  color: #f42;
 }
 
 div.featured section ul.links li {
@@ -699,11 +776,6 @@ div.featured section .latest h4 {
   text-transform: uppercase;
 }
 
-div.featured section .latest p a {
-  font-size: 15px;
-  color: #f42;
-}
-
 div.featured section .latest .text-img {
   width: 30%;
   background: url("../img/latest.jpg") no-repeat center / 200%;
@@ -739,43 +811,6 @@ div.featured section .latest .text-img {
   justify-content: space-between;
   color: #f42;
   font-weight: 600;
-}
-
-.deals-heading h3 {
-  font-size: 12px;
-  align-self: center;
-}
-
-.deals-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-  justify-content: space-between;
-  grid-gap: 20px 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.deals-content div .img {
-  width: 100%;
-}
-
-.deals-content div .img img {
-  width: 100%;
-}
-
-.deals-content p {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.deals-content p a:hover,
-.deals-content p a:active {
-  color: #f42;
-  text-decoration-line: underline;
-}
-
-.deals-content span {
-  font-size: 12px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -832,43 +867,10 @@ footer {
   background: #444;
 }
 
-.icons ul {
-  display: flex;
-  justify-content: center;
-  height: 50%;
-}
-
-.icons ul li {
-  margin-right: 10px;
-}
-
-.icons ul:first-of-type li {
-  background: #7d7c7c;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-}
-
 .icons ul:first-of-type li img {
   height: 30px;
   width: 30px;
   padding-left: 5px;
-}
-
-.icons a {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  color: #7d7c7c;
-  display: inherit;
-}
-
-.icons a:hover,
-.icons a:active {
-  color: #fff;
 }
 
 .icons ul:first-of-type {
