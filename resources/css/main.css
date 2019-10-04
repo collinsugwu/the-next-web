@@ -5,12 +5,12 @@
   box-sizing: border-box;
   font-family:
     "Lucida Sans",
- "Lucida Sans Regular",
- "Lucida Grande",
+    "Lucida Sans Regular",
+    "Lucida Grande",
     "Lucida Sans Unicode",
- Geneva,
- Verdana,
- sans-serif;
+    Geneva,
+    Verdana,
+    sans-serif;
 }
 
 *,
@@ -879,6 +879,7 @@ footer {
   color: #fff;
   align-items: center;
 }
+
 .copy {
   background: #131313;
   display: flex;
