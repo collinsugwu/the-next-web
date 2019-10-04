@@ -21,7 +21,7 @@ Open your terminal in your working folder and execute the following command
 
 
 Here is the link to the live version of this project	
-[here]()
+[here](https://raw.githack.com/collinsugwu/the-next-web/the-next-web-working-branch/index.html)
 
 
 ## Things learnt
