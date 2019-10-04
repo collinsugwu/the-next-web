@@ -133,12 +133,17 @@ input {
   font-weight: bold;
 }
 
-header a p {
-  background: #fd3;
+header .ticket{
+  display: flex;
   height: 30px;
-  padding-top: 10px;
+  align-items: center;
+  background: #fd3;
+}
+
+header a p {
   padding-left: 20px;
 }
+
 
 header a {
   font-size: 14px;
@@ -191,8 +196,6 @@ header a {
     display: block;
   }
 
-  .menu img{
-  }
 }
 
 /* Carousel */
@@ -202,12 +205,78 @@ header a {
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, 70px);
   justify-items: center;
+  color: #fff;
 }
 
 .carousel div:nth-child(2n + 1) {
-  background: #7d7c7c;
-  width: 98%;
+  width: 95%;
   margin: 2px 0;
+}
+
+.slide1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/1200px-Musée_Matisse_Nice.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.slide1 section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slide1 section h1 {
+  font-size: 1100%;
+  font-weight: bolder;
+}
+.slide1 section span {
+  font-size: 12px;
+  font-weight: 100;
+}
+.insight {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+}
+
+.insight h2 {
+  font-size: 320%;
+  font-weight: bolder;
+}
+
+.insight span {
+  font-size: 80%;
+  color: #aaa;
+}
+.slide2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/1200px-nizza-cote_dazur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/download.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tech{
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+}
+
+.tech h2 {
+ font-weight: bolder;
+ color: #aaa;
+}
+
+.tech span {
+  font-size: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -222,30 +291,57 @@ header a {
 
   .carousel div:nth-child(1) {
     grid-area: slide1;
-    background: #7d7c7c;
-    height: 300px;
+    height: 450px;
   }
 
   .carousel div:nth-child(2) {
     grid-area: slide2;
-    background: #554be6;
     width: 100%;
     margin: 2px 0;
   }
 
   .carousel div:nth-child(3) {
     grid-area: slide3;
-    background: #33a860;
     width: 100%;
     margin: 2px 0;
   }
 }
 
+@media screen and (max-width:767px){
+  .slide1 section {
+    display: none;
+  }
+  .insight{
+    grid-gap: 2px;
+  }
+  .insight h2{
+    font-size: 16px;
+  }
+  .tech{
+    padding-top: 10px;
+    grid-gap: 2px;
+  }
+  .tech h2{
+    font-size: 16px;
+  }
+  .slide2{
+      display: inherit;
+      width: 100%;
+  }
+  .slide3{
+    display: inherit;
+    width: 100%;
+  }
+ }
+
 /* Latest news */
 section.latest-news h2 {
-  margin: 20px 10px;
+  margin-top: 20px;
 }
-
+.latest-news h2, .latest-news-articles{
+  width: 90%;
+  margin: 0 auto;
+}
 section.latest-news article {
   margin: 20px 10px;
   display: grid;
@@ -459,9 +555,6 @@ div.featured section .latest {
   display: flex;
 }
 
-div.featured section ul.links{
-  
-}
 
 div.featured section ul.links li{
   list-style-type: disc;
