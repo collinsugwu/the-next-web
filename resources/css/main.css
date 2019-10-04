@@ -3,14 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Lucida Sans",
-    "Lucida Sans Regular",
-    "Lucida Grande",
-    "Lucida Sans Unicode",
-    Geneva,
-    Verdana,
-    sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 *,
@@ -31,6 +25,43 @@ a {
   visibility: hidden;
 }
 
+li a {
+  text-decoration: none;
+}
+
+header a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.last-nav a {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.first-nav li a {
+  color: #7d7c7c;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+article.fund h2 a {
+  color: #fff;
+}
+
+article.fund ul li {
+  padding: 5px 5px;
+}
+
+article.fund ul li a {
+  font-weight: 100;
+  font-size: 0.8em;
+  color: #555;
+}
+
 .icons a {
   text-transform: uppercase;
   font-weight: bold;
@@ -42,6 +73,23 @@ a {
 .icons a:hover,
 .icons a:active {
   color: #fff;
+}
+
+.first-nav li {
+  background: #131313;
+  margin: 0 5px;
+}
+
+.last-nav ul li {
+  margin-right: 20px;
+}
+
+.first-ul li:first-of-type {
+  margin-left: 15px;
+}
+
+.last-ul li:last-of-type {
+  margin-right: 15px;
 }
 
 .icons ul li {
@@ -56,6 +104,11 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 5px;
 }
 
 .icons ul {
@@ -81,15 +134,6 @@ header {
   display: none;
 }
 
-ul {
-  list-style: none;
-  padding: 5px;
-}
-
-li a {
-  text-decoration: none;
-}
-
 .first-nav {
   display: flex;
   flex-wrap: wrap;
@@ -107,56 +151,6 @@ li a {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-}
-
-.first-nav li {
-  background: #131313;
-  margin: 0 5px;
-}
-
-.last-nav ul li {
-  margin-right: 20px;
-}
-
-article.fund ul li {
-  padding: 5px 5px;
-}
-
-article.fund ul li a {
-  font-weight: 100;
-  font-size: 0.8em;
-  color: #555;
-}
-
-.first-ul li:first-of-type {
-  margin-left: 15px;
-}
-
-.last-ul li:last-of-type {
-  margin-right: 15px;
-}
-
-header a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-}
-
-.last-nav a {
-  color: #aaa;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-article.fund h2 a {
-  color: #fff;
-}
-
-.first-nav li a {
-  color: #7d7c7c;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 .first-nav li a:hover,
@@ -273,8 +267,7 @@ header a p {
 }
 
 .slide1 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-Musée_Matisse_Nice.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -302,6 +295,10 @@ header a p {
   font-size: 80%;
 }
 
+.deals-content span {
+  font-size: 12px;
+}
+
 .slide1 section span {
   font-size: 12px;
   font-weight: 100;
@@ -319,16 +316,14 @@ header a p {
 }
 
 .slide2 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-nizza-cote_dazur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slide3 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/download.jfif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -435,10 +430,6 @@ section.latest-news .l-news-img {
   overflow: hidden;
 }
 
-article.fund ul li img {
-  width: 3%;
-}
-
 section.latest-news .l-news-img img {
   width: 250%;
 }
@@ -503,6 +494,12 @@ section.latest-news .l-news-content {
 }
 
 /* Funding */
+
+.icons ul:last-of-type li a {
+  color: #fff;
+  align-items: center;
+}
+
 section.funding {
   width: 97%;
   margin: auto;
@@ -547,10 +544,6 @@ section.funding ul.links li {
 .deals-content p a:active {
   color: #f42;
   text-decoration-line: underline;
-}
-
-.deals-content span {
-  font-size: 12px;
 }
 
 article.fund div.fund-footer a {
@@ -599,7 +592,6 @@ article.fund h2 {
   font-size: 1.2em;
 }
 
-
 article.fund h3 {
   padding: 10px 0 10px 80px;
   background: #ffebe9;
@@ -634,9 +626,6 @@ article.fund div.fund-footer {
 
   section.funding article.fund {
     width: 32.5%;
-  }
-
-  section.funding article.fund {
     margin: 10px 0;
   }
 
@@ -696,8 +685,7 @@ div.featured section h2 {
 }
 
 div.featured section .img {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url("../img/featured.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -866,6 +854,10 @@ footer {
   background: #444;
 }
 
+.copy p img {
+  width: 5%;
+}
+
 .icons ul:first-of-type li img {
   height: 30px;
   width: 30px;
@@ -874,11 +866,6 @@ footer {
 
 .icons ul:first-of-type {
   align-items: flex-end;
-}
-
-.icons ul:last-of-type li a {
-  color: #fff;
-  align-items: center;
 }
 
 .copy {
@@ -893,10 +880,6 @@ footer {
   font-size: 14px;
   color: #fff;
   text-align: center;
-}
-
-.copy p img {
-  width: 5%;
 }
 
 .through {
