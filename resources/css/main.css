@@ -30,6 +30,14 @@ header {
   width: 100%;
 }
 
+.logo {
+  display: hidden;
+}
+
+.menu {
+  display: none;
+}
+
 ul {
   list-style: none;
   padding: 5px;
@@ -43,7 +51,6 @@ li a {
   display: flex;
   flex-wrap: wrap;
   background: #131313;
-  height: 32px;
   align-content: center;
 }
 
@@ -92,7 +99,6 @@ li a {
   flex-basis: 800px;
   display: flex;
   flex-wrap: wrap;
-  height: 40px;
   align-content: center;
 }
 
@@ -138,6 +144,55 @@ header a {
   font-size: 14px;
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width:1023px){
+  header .nav-container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo nav1"
+    "logo nav2"
+  }
+
+  .logo {
+    grid-area: logo;
+    background: #f42;
+  }
+
+  .first-nav {
+    grid-area: nav1;
+  }
+
+  .last-nav {
+    grid-area: nav2;
+  }
+
+  header p{
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:810px){
+  .last-ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px){
+  .first-nav {
+    display: none;
+  }
+  .last-nav ul *{
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .menu img{
+  }
 }
 
 /* Carousel */
