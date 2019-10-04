@@ -588,7 +588,7 @@ article.fund .img {
 article.fund ul li img {
   width: 6%;
 }
-  
+
 article.fund .img img {
   width: 100%;
 }
@@ -647,7 +647,6 @@ article.fund div.fund-footer {
   section.funding article.fund:last-of-type {
     margin: 10px 0;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
