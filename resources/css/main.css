@@ -3,14 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Lucida Sans",
-    "Lucida Sans Regular",
-    "Lucida Grande",
-    "Lucida Sans Unicode",
-    Geneva,
-    Verdana,
-    sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 *,
@@ -48,7 +42,6 @@ header a {
   font-weight: bold;
 }
 
-
 .icons a {
   text-transform: uppercase;
   font-weight: bold;
@@ -57,12 +50,16 @@ header a {
   display: inherit;
 }
 
+.first-nav li {
+  background: #131313;
+  margin: 0 5px;
+}
+
 .first-nav li a {
   color: #7d7c7c;
   font-size: 12px;
   font-weight: bold;
 }
-
 
 .last-nav ul li {
   margin-right: 20px;
@@ -86,17 +83,10 @@ article.fund ul li a {
   color: #555;
 }
 
-
 .icons a:hover,
 .icons a:active {
   color: #fff;
 }
-
-.first-nav li {
-  background: #131313;
-  margin: 0 5px;
-}
-
 
 .first-ul li:first-of-type {
   margin-left: 15px;
@@ -105,8 +95,6 @@ article.fund ul li a {
 .last-ul li:last-of-type {
   margin-right: 15px;
 }
-
-
 
 .icons ul:first-of-type li {
   background: #7d7c7c;
@@ -279,8 +267,7 @@ header a p {
 }
 
 .slide1 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-Musée_Matisse_Nice.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -329,16 +316,14 @@ header a p {
 }
 
 .slide2 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-nizza-cote_dazur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slide3 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/download.jfif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -438,6 +423,10 @@ section.latest-news article {
   gap: 5px 10px;
 }
 
+.copy p img {
+  width: 5%;
+}
+
 article.fund ul li img {
   width: 6%;
 }
@@ -447,10 +436,6 @@ section.latest-news .l-news-img {
   height: 80px;
   position: relative;
   overflow: hidden;
-}
-
-.copy p img {
-  width: 5%;
 }
 
 section.latest-news .l-news-img img {
@@ -568,8 +553,6 @@ section.funding ul.links li {
   font-weight: bold;
 }
 
-
-
 article.fund div.fund-footer a {
   font-size: 0.6em;
   color: #555;
@@ -601,8 +584,6 @@ article.fund .img {
   width: 50px;
   height: 50px;
 }
-
-
 
 article.fund .img img {
   width: 100%;
@@ -707,8 +688,7 @@ div.featured section h2 {
 }
 
 div.featured section .img {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url("../img/featured.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -876,8 +856,6 @@ footer {
 .icons {
   background: #444;
 }
-
-
 
 .icons ul:first-of-type li img {
   height: 30px;
