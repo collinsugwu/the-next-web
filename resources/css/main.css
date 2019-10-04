@@ -3,8 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+    "Lucida Sans",
+ "Lucida Sans Regular",
+ "Lucida Grande",
+    "Lucida Sans Unicode",
+ Geneva,
+ Verdana,
+ sans-serif;
 }
 
 *,
@@ -267,7 +273,8 @@ header a p {
 }
 
 .slide1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-Musée_Matisse_Nice.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -316,14 +323,16 @@ header a p {
 }
 
 .slide2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-nizza-cote_dazur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slide3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/download.jfif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -688,7 +697,8 @@ div.featured section h2 {
 }
 
 div.featured section .img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url("../img/featured.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
