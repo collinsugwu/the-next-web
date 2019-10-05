@@ -3,14 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Lucida Sans",
-    "Lucida Sans Regular",
-    "Lucida Grande",
-    "Lucida Sans Unicode",
-    Geneva,
-    Verdana,
-    sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 *,
@@ -132,10 +126,6 @@ header {
   z-index: 10;
 }
 
-.logo {
-  display: none;
-}
-
 .menu {
   display: none;
 }
@@ -206,6 +196,11 @@ header .ticket {
 header a p {
   padding-left: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .logo {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1023px) {
   header .nav-container {
@@ -219,7 +214,14 @@ header a p {
 
   .logo {
     grid-area: logo;
-    background: #f42;
+    background-image: linear-gradient(to bottom right, #e32768, #f84221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 80%;
   }
 
   .first-nav {
@@ -273,8 +275,7 @@ header a p {
 }
 
 .slide1 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-Musée_Matisse_Nice.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -323,16 +324,14 @@ header a p {
 }
 
 .slide2 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/1200px-nizza-cote_dazur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slide3 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
     url("img/download.jfif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -697,8 +696,7 @@ div.featured section h2 {
 }
 
 div.featured section .img {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url("../img/featured.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
