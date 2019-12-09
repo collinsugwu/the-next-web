@@ -59,7 +59,7 @@ In this project, we'll get the chance to build a responsive website. We’ll be 
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 <p align="center">
-    <img src="resources/img/newsweek.PNG" alt="Screenshot">
+    <img src="resources/img/nextweb.PNG" alt="Screenshot">
 </p>
 
 ### Built With
