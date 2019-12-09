@@ -17,10 +17,10 @@
 
 <!-- PROJECT LOGO -->
 <br />
-  <h3 align="center">Apple Clone</h3>
+  <h3 align="center">The Next Web</h3>
 
   <p align="center">
-    A clone of the [Newsweek] (https://www.newsweek.com/)  
+    A clone of the [Newsweek] (https://thenextweb.com/)  
     <br />
     <a href="https://github.com/collinsugwu/the-next-web/blob/master/README.md"><strong>Explore the docs �</strong></a>
     <br />
